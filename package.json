@@ -1,0 +1,37 @@
+{
+  "name": "tic-tac-toe",
+  "version": "0.0.0",
+  "registry": "github",
+  "description": "",
+  "homepage": "https://github.com/amitport/tic-tac-toe",
+  "repository": "amitport/tic-tac-toe",
+  "author": {
+    "name": "Amit Portnoy",
+    "email": "amit.portnoy@gmail.com",
+    "url": "https://github.com/amitport"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-debug": "^2.0.1",
+    "gulp-eslint": "^0.14.0",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-mocha": "^2.1.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-watch": "^4.2.4",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "license": "Apache-2.0"
+}
