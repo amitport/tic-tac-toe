@@ -9,9 +9,9 @@
     </style>
 </head>
 <body layout="row" layout-fill>
-    <md-content ng-cloak layout-padding layout="column" layout-align="center center" flex>
+    <md-content ng-cloak ng-controller="GameCtrl as game" ng-cloak layout-padding layout="column" layout-align="center center" flex>
         <md-whiteframe layout-padding class="md-whiteframe-z1">
-            hey
+            <board></board>
         </md-whiteframe>
         <md-button>
             <md-icon md-svg-icon="img/icons/ic_replay_black_24px.svg"></md-icon>
@@ -21,7 +21,7 @@
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
     <script>
-        System.import('js/index');
+        System.import('index');
     </script>
 </body>
 </html>
