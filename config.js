@@ -1,9 +1,10 @@
 System.config({
-  "baseURL": "/tic-tac-toe",
+  "baseURL": "/tic-tac-toe-page",
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
-      "runtime"
+      "runtime",
+      "es7.comprehensions"
     ]
   },
   "paths": {

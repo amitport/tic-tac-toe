@@ -9,13 +9,20 @@
     </style>
 </head>
 <body layout="row" layout-fill>
-    <md-content ng-cloak ng-controller="GameCtrl as game" ng-cloak layout-padding layout="column" layout-align="center center" flex>
-        <md-whiteframe layout-padding class="md-whiteframe-z1">
+    <md-content ng-cloak ng-controller="GameCtrl as game" ng-cloak layout-padding layout="column" layout-align="center center" flex
+                style="border-bottom: 4px solid {{game.XColor}}; border-top: 4px solid {{game.OColor}};">
+        <md-whiteframe class="md-whiteframe-z1 board" ng-class="{'done': game.session.result}" layout="column" layout-padding layout-align="center center">
             <board></board>
         </md-whiteframe>
-        <md-button>
+        <md-button class="animate-show" ng-click="game.replay()" ng-show="game.session.result">
             <md-icon md-svg-icon="img/icons/ic_replay_black_24px.svg"></md-icon>
         </md-button>
+        <div class="md-display-1" style="position: absolute; bottom: 20px; right: 20px" ng-style="{color: game.XColor}">
+            <span fade-stat-change="0">{{playerStat}}</span>
+        </div>
+        <div class="md-display-1" style="position: absolute; top: 20px; right: 20px;" ng-style="{color: game.OColor}">
+            <span fade-stat-change="1">{{playerStat}}</span>
+        </div>
     </md-content>
 
     <script src="jspm_packages/system.js"></script>
