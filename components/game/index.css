@@ -17,11 +17,11 @@
 }
 
 .stat {
-    -webkit-transition:opacity cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.25s;
-    transition:opacity cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.25s;
+    -webkit-transition:opacity cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.18s;
+    transition:opacity cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.18s;
     opacity: 1;
 }
 
 .stat.fade {
-    opacity: 0;
+    opacity: 0.4;
 }
