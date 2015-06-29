@@ -1,5 +1,5 @@
 System.config({
-  "baseURL": "/tic-tac-toe-page",
+  "baseURL": "/tic-tac-toe",
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
